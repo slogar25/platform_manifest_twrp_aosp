@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remove-project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+   <remove-project path="art" name="platform/art" groups="pdk" />
+   <remove-project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
+   <remove-project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="developers/build" name="platform/developers/build" />
+   <remove-project path="developers/demos" name="platform/developers/demos" />
+   <remove-project path="developers/samples/android" name="platform/developers/samples/android" />
+   <remove-project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="device/asus/fugu" name="device/asus/fugu" groups="device,fugu,broadcom_pdk" />
+   <remove-project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu,broadcom_pdk" clone-depth="1" />
+   <remove-project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
+   <remove-project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+   <remove-project path="device/generic/common" name="device/generic/common" groups="pdk" />
+   <remove-project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+   <remove-project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+   <remove-project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
+   <remove-project path="device/generic/mips64" name="device/generic/mips64" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-mips64" name="device/generic/mini-emulator-mips64" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
+   <remove-project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" />
+   <remove-project path="device/generic/qemu" name="device/generic/qemu" />
+   <remove-project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
+   <remove-project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
+   <remove-project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
+   <remove-project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
+   <remove-project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
+   <remove-project path="device/google/contexthub" name="device/google/contexthub" groups="device" />
+   <remove-project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
+   <remove-project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon" clone-depth="1" />
+   <remove-project path="device/google/marlin" name="device/google/marlin" groups="device,marlin" />
+   <remove-project path="device/google/marlin-kernel" name="device/google/marlin-kernel" groups="device,marlin" clone-depth="1" />
+   <remove-project path="device/htc/flounder" name="device/htc/flounder" groups="device,flounder,broadcom_pdk" />
+   <remove-project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
+   <remove-project path="device/huawei/angler" name="device/huawei/angler" groups="device,angler,broadcom_pdk" />
+   <remove-project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" clone-depth="1" />
+   <remove-project path="device/intel/edison" name="device/intel/edison" groups="device" />
+   <remove-project path="device/lge/bullhead" name="device/lge/bullhead" groups="device,bullhead" />
+   <remove-project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" clone-depth="1" />
+   <remove-project path="device/linaro/hikey" name="device/linaro/hikey" />
+   <remove-project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" clone-depth="1" />
+   <remove-project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu,broadcom_pdk" />
+   <remove-project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
+   <remove-project path="device/sample" name="device/sample" groups="pdk" />
+   <remove-project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/aac" name="platform/external/aac" groups="pdk" />
+   <remove-project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault" />
+   <remove-project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/androidplot" name="platform/external/androidplot" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/apache-commons-math" name="platform/external/apache-commons-math" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/apache-http" name="platform/external/apache-http" groups="pdk" />
+   <remove-project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
+   <remove-project path="external/archive-patcher" name="platform/external/archive-patcher" groups="pdk" />
+   <remove-project path="external/autotest" name="platform/external/autotest" />
+   <remove-project path="external/avahi" name="platform/external/avahi" />
+   <remove-project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
+   <remove-project path="external/c-ares" name="platform/external/c-ares" />
+   <remove-project path="external/caliper" name="platform/external/caliper" />
+   <remove-project path="external/cblas" name="platform/external/cblas" groups="pdk" />
+   <remove-project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
+   <remove-project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
+   <remove-project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
+   <remove-project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
+   <remove-project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
+   <remove-project path="external/cros/system_api" name="platform/external/cros/system_api" />
+   <remove-project path="external/curl" name="platform/external/curl" />
+   <remove-project path="external/dagger2" name="platform/external/dagger2" />
+   <remove-project path="external/dbus" name="platform/external/dbus" />
+   <remove-project path="external/dbus-binding-generator" name="platform/external/dbus-binding-generator" />
+   <remove-project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
+   <remove-project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/dhcpcd-6.8.2" name="platform/external/dhcpcd-6.8.2" />
+   <remove-project path="external/dng_sdk" name="platform/external/dng_sdk" />
+   <remove-project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
+   <remove-project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" />
+   <remove-project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
+   <remove-project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
+   <remove-project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/eigen" name="platform/external/eigen" groups="pdk" />
+   <remove-project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/expat" name="platform/external/expat" groups="pdk" />
+   <remove-project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
+   <remove-project path="external/fec" name="platform/external/fec" />
+   <remove-project path="external/fio" name="platform/external/fio" groups="pdk-fs" />
+   <remove-project path="external/flac" name="platform/external/flac" groups="pdk" />
+   <remove-project path="external/fonttools" name="platform/external/fonttools" groups="pdk-fs" />
+   <remove-project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/gemmlowp" name="platform/external/gemmlowp" />
+   <remove-project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
+   <remove-project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
+   <remove-project path="external/gmock" name="platform/external/gmock" groups="pdk" />
+   <remove-project path="external/google-benchmark" name="platform/external/google-benchmark" groups="pdk" />
+   <remove-project path="external/google-breakpad" name="platform/external/google-breakpad" groups="dragon" />
+   <remove-project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" groups="pdk-fs" />
+   <remove-project path="external/gtest" name="platform/external/gtest" groups="pdk" />
+   <remove-project path="external/guava" name="platform/external/guava" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/guice" name="platform/external/guice" groups="pdk" />
+   <remove-project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
+   <remove-project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk-fs" />
+   <remove-project path="external/ImageMagick" name="platform/external/ImageMagick" groups="pdk" />
+   <remove-project path="external/ims" name="platform/external/ims" groups="pdk" />
+   <remove-project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
+   <remove-project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/iptables" name="platform/external/iptables" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/iputils" name="platform/external/iputils" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/iw" name="platform/external/iw" />
+   <remove-project path="external/jacoco" name="platform/external/jacoco" />
+   <remove-project path="external/jarjar" name="platform/external/jarjar" groups="pdk" />
+   <remove-project path="external/javasqlite" name="platform/external/javasqlite" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/javassist" name="platform/external/javassist" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
+   <remove-project path="external/jdiff" name="platform/external/jdiff" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jetty" name="platform/external/jetty" groups="pdk-fs" />
+   <remove-project path="external/jhead" name="platform/external/jhead" groups="pdk" />
+   <remove-project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
+   <remove-project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
+   <remove-project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jsr305" name="platform/external/jsr305" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/jsr330" name="platform/external/jsr330" groups="pdk" />
+   <remove-project path="external/junit" name="platform/external/junit" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libavc" name="platform/external/libavc" groups="pdk" />
+   <remove-project path="external/libbrillo" name="platform/external/libbrillo" />
+   <remove-project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libchrome" name="platform/external/libchrome" />
+   <remove-project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
+   <remove-project path="external/libedit" name="platform/external/libedit" groups="pdk-fs" />
+   <remove-project path="external/libdaemon" name="platform/external/libdaemon" />
+   <remove-project path="external/libevent" name="platform/external/libevent" />
+   <remove-project path="external/libexif" name="platform/external/libexif" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libgdx" name="platform/external/libgdx" groups="pdk" />
+   <remove-project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
+   <remove-project path="external/libhevc" name="platform/external/libhevc" groups="pdk-fs" />
+   <remove-project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
+   <remove-project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" />
+   <remove-project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
+   <remove-project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" />
+   <remove-project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
+   <remove-project path="external/libogg" name="platform/external/libogg" groups="pdk" />
+   <remove-project path="external/libopus" name="platform/external/libopus" groups="pdk" />
+   <remove-project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libusb" name="platform/external/libusb" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
+   <remove-project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/libweave" name="platform/external/libweave" />
+   <remove-project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/lld" name="platform/external/lld" groups="pdk-fs" />
+   <remove-project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
+   <remove-project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/mmc-utils" name="platform/external/mmc-utils" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk-fs" />
+   <remove-project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/modp_b64" name="platform/external/modp_b64" />
+   <remove-project path="external/mp4parser" name="platform/external/mp4parser" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/mtpd" name="platform/external/mtpd" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/nanohttpd" name="platform/external/nanohttpd" groups="pdk-fs" />
+   <remove-project path="external/nanopb-c" name="platform/external/nanopb-c" groups="pdk" />
+   <remove-project path="external/naver-fonts" name="platform/external/naver-fonts" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/netcat" name="platform/external/netcat" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/netperf" name="platform/external/netperf" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/neven" name="platform/external/neven" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/nfacct" name="platform/external/nfacct" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
+   <remove-project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/okhttp" name="platform/external/okhttp" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/opencv" name="platform/external/opencv" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/opencv3" name="platform/external/opencv3" />
+   <remove-project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="pdk-fs" />
+   <remove-project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk-fs" />
+   <remove-project path="external/pdfium" name="platform/external/pdfium" groups="pdk" />
+   <remove-project path="external/piex" name="platform/external/piex" />
+   <remove-project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/proguard" name="platform/external/proguard" groups="pdk" />
+   <remove-project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
+   <remove-project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/rmi4utils" name="platform/external/rmi4utils" />
+   <remove-project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/rootdev" name="platform/external/rootdev" />
+   <remove-project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
+   <remove-project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
+   <remove-project path="external/shflags" name="platform/external/shflags" groups="pdk" />
+   <remove-project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
+   <remove-project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
+   <remove-project path="external/sl4a" name="platform/external/sl4a" />
+   <remove-project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
+   <remove-project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/snakeyaml" name="platform/external/snakeyaml" groups="pdk" />
+   <remove-project path="external/sonic" name="platform/external/sonic" groups="pdk" />
+   <remove-project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
+   <remove-project path="external/speex" name="platform/external/speex" groups="pdk" />
+   <remove-project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
+   <remove-project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/testng" name="platform/external/testng" groups="pdk" />
+   <remove-project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
+   <remove-project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
+   <remove-project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
+   <remove-project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
+   <remove-project path="external/tlsdate" name="platform/external/tlsdate" />
+   <remove-project path="external/tpm2" name="platform/external/tpm2" />
+   <remove-project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
+   <remove-project path="external/unicode" name="platform/external/unicode" groups="pdk" />
+   <remove-project path="external/universal-tween-engine" name="platform/external/universal-tween-engine" />
+   <remove-project path="external/v8" name="platform/external/v8" groups="pdk" />
+   <remove-project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
+   <remove-project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot" />
+   <remove-project path="external/vixl" name="platform/external/vixl" groups="pdk" />
+   <remove-project path="external/vogar" name="platform/external/vogar" groups="pdk" />
+   <remove-project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" />
+   <remove-project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" />
+   <remove-project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
+   <remove-project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+   <remove-project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" />
+   <remove-project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+   <remove-project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
+   <remove-project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
+   <remove-project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
+   <remove-project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
+   <remove-project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
+   <remove-project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
+   <remove-project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+   <remove-project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+   <remove-project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
+   <remove-project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="hardware/akm" name="platform/hardware/akm" />
+   <remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+   <remove-project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
+   <remove-project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
+   <remove-project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
+   <remove-project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
+   <remove-project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
+   <remove-project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
+   <remove-project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
+   <remove-project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" />
+   <remove-project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel" />
+   <remove-project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" />
+   <remove-project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" />
+   <remove-project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
+   <remove-project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
+   <remove-project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
+   <remove-project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
+   <remove-project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
+   <remove-project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
+   <remove-project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+   <remove-project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
+   <remove-project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
+   <remove-project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
+   <remove-project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
+   <remove-project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
+   <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
+   <remove-project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
+   <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
+   <remove-project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
+   <remove-project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
+   <remove-project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
+   <remove-project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
+   <remove-project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
+   <remove-project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
+   <remove-project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
+   <remove-project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
+   <remove-project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+   <remove-project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
+   <remove-project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
+   <remove-project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
+   <remove-project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" />
+   <remove-project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
+   <remove-project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
+   <remove-project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
+   <remove-project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
+   <remove-project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" />
+   <remove-project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" />
+   <remove-project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" groups="pdk-fs" />
+   <remove-project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" />
+   <remove-project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" />
+   <remove-project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
+   <remove-project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
+   <remove-project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" />
+   <remove-project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
+   <remove-project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
+   <remove-project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
+   <remove-project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
+   <remove-project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
+   <remove-project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="pdk-fs" />
+   <remove-project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
+   <remove-project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
+   <remove-project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
+   <remove-project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
+   <remove-project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
+   <remove-project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
+   <remove-project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
+   <remove-project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
+   <remove-project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
+   <remove-project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
+   <remove-project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
+   <remove-project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
+   <remove-project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
+   <remove-project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" />
+   <remove-project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" />
+   <remove-project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
+   <remove-project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
+   <remove-project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" />
+   <remove-project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="apps_stk,pdk-fs" />
+   <remove-project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" />
+   <remove-project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" />
+   <remove-project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" groups="pdk-fs" />
+   <remove-project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" />
+   <remove-project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs" />
+   <remove-project path="packages/apps/TV" name="platform/packages/apps/TV" />
+   <remove-project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" groups="pdk-fs" />
+   <remove-project path="packages/experimental" name="platform/packages/experimental" />
+   <remove-project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" groups="pdk-fs" />
+   <remove-project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
+   <remove-project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
+   <remove-project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
+   <remove-project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs" />
+   <remove-project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
+   <remove-project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
+   <remove-project path="pdk" name="platform/pdk" groups="pdk" />
+   <remove-project path="platform_testing" name="platform/platform_testing" />
+   <remove-project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
+   <remove-project path="prebuilts/clang/darwin-x86/host/3.6" name="platform/prebuilts/clang/darwin-x86/host/3.6" groups="pdk,darwin" />
+   <remove-project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" />
+   <remove-project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" />
+   <remove-project path="prebuilts/deqp" name="platform/prebuilts/deqp" groups="pdk-fs" />
+   <remove-project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" />
+   <remove-project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
+   <remove-project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" />
+   <remove-project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" />
+   <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" />
+   <remove-project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" groups="pdk,darwin,arm" />
+   <remove-project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" />
+   <remove-project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips" />
+   <remove-project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
+   <remove-project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
+   <remove-project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" />
+   <remove-project path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" groups="pdk,linux,mips" />
+   <remove-project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" />
+   <remove-project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" groups="darwin" />
+   <remove-project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" />
+   <remove-project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,tradefed" />
+   <remove-project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" groups="linux,tradefed" />
+   <remove-project path="prebuilts/gradle-plugin" name="platform/prebuilts/gradle-plugin" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="prebuilts/ninja/darwin-x86" name="platform/prebuilts/ninja/darwin-x86" groups="darwin,pdk,tradefed" />
+   <remove-project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
+   <remove-project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
+   <remove-project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
+   <remove-project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
+   <remove-project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="system/bt" name="platform/system/bt" groups="pdk" />
+   <remove-project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
+   <remove-project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
+   <remove-project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
+   <remove-project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
+   <remove-project path="system/firewalld" name="platform/system/firewalld" />
+   <remove-project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
+   <remove-project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
+   <remove-project path="system/media" name="platform/system/media" groups="pdk" />
+   <remove-project path="system/nativepower" name="platform/system/nativepower" />
+   <remove-project path="system/nvram" name="platform/system/nvram" />
+   <remove-project path="system/security" name="platform/system/security" groups="pdk" />
+   <remove-project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
+   <remove-project path="system/tpm" name="platform/system/tpm" />
+   <remove-project path="system/update_engine" name="platform/system/update_engine" />
+   <remove-project path="system/vold" name="platform/system/vold" groups="pdk" />
+   <remove-project path="system/weaved" name="platform/system/weaved" />
+   <remove-project path="system/webservd" name="platform/system/webservd" />
+   <remove-project path="toolchain/binutils" name="toolchain/binutils" />
+   <remove-project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
+   <remove-project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
+   <remove-project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
+   <remove-project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
+   <remove-project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
+   <remove-project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
+   <remove-project path="tools/loganalysis" name="platform/tools/loganalysis" groups="notdefault,tradefed" />
+   <remove-project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
+   <remove-project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
+   <remove-project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+   <remove-project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
+   <remove-project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+</manifest>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
